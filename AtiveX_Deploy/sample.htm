@@ -1,0 +1,35 @@
+<HTML>
+<script language="javascript">
+	function print01(str)
+	{	  
+		printerObj1.Init();
+		printerObj1.AddData('출력해야할 데이터1');
+		printerObj1.Print();
+	}
+
+	function print02(str)
+	{
+		printerObj1.Init();
+		printerObj1.AddData('출력해야할 데이터2');
+		printerObj1.Print();
+	}
+	
+</script>	
+
+<OBJECT
+	  classid="clsid:E0A53274-D311-4BC9-AE96-26C138156BBC"
+	  codebase="http://DESKTOP-QLD15QI/ActiveFormProj11.cab#version=1,0,0,1"
+	  width=300
+	  height=300
+	  align=center
+	  hspace=0
+	  vspace=0
+	  name="printerObj1">
+</OBJECT>
+
+<body>
+<br>
+<a href="javascript:print01('20200830')">1.Print (tot_fare_sum_sheet) : 총운임집계표</a><br>
+<a href="javascript:print02('20200830')">2.Print (route_sum_sheet) : 노선집계표</a>
+</body>
+</HTML>

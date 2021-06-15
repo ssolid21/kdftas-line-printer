@@ -1,0 +1,48 @@
+<HTML>
+	<script language="javascript">
+		function print01(str)
+		{
+			printerObj1.Init();
+			printerObj1.AddData('우니나라abcd12345 우리나라2345bacDCD');
+			printerObj1.Print();
+		}
+
+		function print02(str)
+		{
+			printerObj1.Init();
+			printerObj1.AddData('우니나라abcd12345 우리나라2345bacDCD');
+			printerObj1.Print();
+		}
+	</script>	
+
+<H1> ActiveX Test Page </H1><p>
+You should see your AtiveX forms or controls embedded in the form below.
+<HR><center><P>
+<OBJECT
+	  classid="clsid:E0A53274-D311-4BC9-AE96-26C138156BBC"
+	  codebase="http://DESKTOP-QLD15QI/ActiveFormProj1.cab#version=1,0,0,1"
+	  width=10
+	  height=10
+	  align=center
+	  hspace=0
+	  vspace=0
+	  name="printerObj1">
+</OBJECT>
+
+<table>
+	<tr>
+		<td height="25">
+			<a href="javascript:print01('20200830')">
+				<p align="center"><b>print01</b>
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td height="25">
+			<a href="javascript:print02('20200830')"> 
+				<p align="center"><b>print02</b>
+			</a>
+		</td>
+	</tr>
+</table>
+</HTML>
